@@ -1,9 +1,10 @@
-package ic.doc.templatemethod;
+package ic.doc.strategy;
 
 import java.util.Iterator;
 
-public class FibonacciSequence extends sequenceCommon {
+public class TriangleNumberSequence implements SequenceCommon{
 
+  @Override
   public int term(int i) {
     if (i < 0) {
       throw new IllegalArgumentException("Not defined for indices < 0");
@@ -14,5 +15,8 @@ public class FibonacciSequence extends sequenceCommon {
     return term(i - 1) + term(i - 2);
   }
 
-
+  @Override
+  public Iterator<Integer> iterator() {
+    return new SequenceCommon.SequenceIterator();
+  }
 }
