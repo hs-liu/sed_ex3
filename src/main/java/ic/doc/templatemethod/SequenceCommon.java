@@ -1,6 +1,8 @@
 package ic.doc.templatemethod;
 import java.util.Iterator;
 
+//only use inheritance to resue and reformat codes
+//superclass with all common methods
 public abstract class SequenceCommon {
 
   public abstract int term(int i);

@@ -1,6 +1,8 @@
 package ic.doc.strategy;
 
 public class TriangleNumberSequence extends CommonSequence {
+
+  //similarly, only need to implement term
   @Override
   public int term(int i) {
     if (i < 0) {

@@ -4,6 +4,8 @@ import java.util.Iterator;
 
 public class TriangleNumberSequence extends SequenceCommon {
 
+  //only term implementation differs from superclass
+  //complete separately
   @Override
   public int term(int i) {
     if (i < 0) {

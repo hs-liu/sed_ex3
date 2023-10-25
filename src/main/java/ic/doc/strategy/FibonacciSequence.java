@@ -2,6 +2,8 @@ package ic.doc.strategy;
 
 public class FibonacciSequence extends CommonSequence {
 
+  //extends CommonSequence - subclass
+  //only needs to implement term
   @Override
   public int term(int i) {
     if (i < 0) {
