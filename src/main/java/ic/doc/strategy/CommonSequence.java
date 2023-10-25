@@ -16,12 +16,12 @@ public abstract class CommonSequence implements TermInterface{
     private int index = 0;
 
     @Override
-    final public boolean hasNext() {
+    public boolean hasNext() {
       return true;
     }
 
     @Override
-    final public Integer next() {
+    public Integer next() {
       return term(index++);
     }
 
