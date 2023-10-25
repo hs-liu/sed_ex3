@@ -1,8 +1,6 @@
 package ic.doc.strategy;
 
-import java.util.Iterator;
-
-public class FibonacciSequence implements SequenceCommon {
+public class FibonacciSequence extends CommonSequence {
 
   @Override
   public int term(int i) {
@@ -14,10 +12,4 @@ public class FibonacciSequence implements SequenceCommon {
     }
     return term(i - 1) + term(i - 2);
   }
-
-  @Override
-  public Iterator<Integer> iterator() {
-    return new SequenceIterator();
-  }
-
 }

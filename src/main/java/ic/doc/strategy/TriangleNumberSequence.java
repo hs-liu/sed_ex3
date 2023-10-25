@@ -1,9 +1,6 @@
 package ic.doc.strategy;
 
-import java.util.Iterator;
-
-public class TriangleNumberSequence implements SequenceCommon{
-
+public class TriangleNumberSequence extends CommonSequence {
   @Override
   public int term(int i) {
     if (i < 0) {
@@ -14,9 +11,5 @@ public class TriangleNumberSequence implements SequenceCommon{
     }
     return term(i - 1) + term(i - 2);
   }
-
-  @Override
-  public Iterator<Integer> iterator() {
-    return new SequenceCommon.SequenceIterator();
-  }
 }
+

@@ -1,12 +1,14 @@
-package ic.doc.templatemethod;
+package ic.doc.strategy;
+
 import java.util.Iterator;
 
-public abstract class sequenceCommon {
+public abstract class CommonSequence implements TermInterface{
 
-  abstract int term(int i);
+  @Override
+  public abstract int term(int i);
 
   public Iterator<Integer> iterator() {
-    return new sequenceCommon.SequenceIterator();
+    return new SequenceIterator();
   }
 
   private class SequenceIterator implements Iterator<Integer> {
@@ -30,4 +32,3 @@ public abstract class sequenceCommon {
   }
 
 }
-

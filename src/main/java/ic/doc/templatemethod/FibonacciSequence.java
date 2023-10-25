@@ -1,10 +1,9 @@
 package ic.doc.templatemethod;
 
-import java.util.Iterator;
+public class FibonacciSequence extends SequenceCommon {
 
-public class FibonacciSequence extends sequenceCommon {
-
-  public int term(int i) {
+  @Override
+  protected int term(int i) {
     if (i < 0) {
       throw new IllegalArgumentException("Not defined for indices < 0");
     }
@@ -13,6 +12,4 @@ public class FibonacciSequence extends sequenceCommon {
     }
     return term(i - 1) + term(i - 2);
   }
-
-
 }
