@@ -2,7 +2,7 @@ package ic.doc.templatemethod;
 
 import java.util.Iterator;
 
-public class TriangleNumberSequence extends SequenceCommon {
+public class TriangleNumberSequence extends SequenceCommon implements Iterable<Integer> {
 
   //only term implementation differs from superclass
   //complete separately

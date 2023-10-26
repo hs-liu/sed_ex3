@@ -1,6 +1,6 @@
 package ic.doc.strategy;
 
-public class TriangleNumberSequence extends CommonSequence {
+public class TriangleNumberSequence extends CommonSequence implements Iterable<Integer> {
 
   //similarly, only need to implement term
   @Override
@@ -8,10 +8,7 @@ public class TriangleNumberSequence extends CommonSequence {
     if (i < 0) {
       throw new IllegalArgumentException("Not defined for indices < 0");
     }
-    if (i < 2) {
-      return 1;
-    }
-    return term(i - 1) + term(i - 2);
+    return (i + 1) * (i + 2) / 2;
   }
 }
 

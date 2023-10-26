@@ -43,6 +43,6 @@ public class TriangleNumberSequenceTest {
 
     @Test
     public void canBeIteratedThrough() {
-      assertThat(sequence, beginsWith(1, 3, 6, 10, 5));
+      assertThat(sequence, beginsWith(1, 3, 6, 10, 15));
     }
 }

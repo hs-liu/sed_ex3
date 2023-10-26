@@ -1,6 +1,6 @@
 package ic.doc.strategy;
 
-public class FibonacciSequence extends CommonSequence {
+public class FibonacciSequence extends CommonSequence implements Iterable<Integer> {
 
   //extends CommonSequence - subclass
   //only needs to implement term

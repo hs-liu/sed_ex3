@@ -6,6 +6,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.fail;
 
+import org.hamcrest.MatcherAssert;
 import org.junit.Test;
 
 public class FibonacciSequenceTest {
@@ -39,8 +40,6 @@ public class FibonacciSequenceTest {
   }
 
   @Test
-  public void canBeIteratedThrough() {
-    assertThat(sequence, beginsWith(1, 1, 2, 3, 5));
-  }
+  public void canBeIteratedThrough() { assertThat(sequence, beginsWith(1, 1, 2, 3, 5));}
 
 }
