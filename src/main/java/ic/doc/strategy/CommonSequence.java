@@ -4,7 +4,7 @@ import java.util.Iterator;
 
 //super class that implements the interface
 //its subclassess need to implement the interface methods
-public abstract class CommonSequence implements TermInterface{
+public abstract class CommonSequence implements TermInterface {
 
   @Override
   //abstract: the detail implementation complete in subclasses

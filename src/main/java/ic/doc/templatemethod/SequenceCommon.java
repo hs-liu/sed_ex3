@@ -1,4 +1,5 @@
 package ic.doc.templatemethod;
+
 import java.util.Iterator;
 
 //only use inheritance to resue and reformat codes

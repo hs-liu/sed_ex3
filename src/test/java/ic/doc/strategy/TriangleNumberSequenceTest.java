@@ -10,6 +10,7 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.fail;
 
 public class TriangleNumberSequenceTest {
+
   final TriangleNumberSequence sequence = new TriangleNumberSequence();
 
   @Test

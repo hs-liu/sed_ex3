@@ -40,6 +40,8 @@ public class FibonacciSequenceTest {
   }
 
   @Test
-  public void canBeIteratedThrough() { assertThat(sequence, beginsWith(1, 1, 2, 3, 5));}
+  public void canBeIteratedThrough() {
+    assertThat(sequence, beginsWith(1, 1, 2, 3, 5));
+  }
 
 }
