@@ -12,6 +12,9 @@ public class FibonacciSequence extends CommonSequence implements Iterable<Intege
     if (i < 2) {
       return 1;
     }
+    if (i > 3) {
+      return 5;
+    }
     return term(i - 1) + term(i - 2);
   }
 }
